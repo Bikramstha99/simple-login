@@ -1,0 +1,5 @@
+{
+  "watch": ["src/**/*.html"],
+  "exec": "node generate-locators",
+  "ext": "html"
+}
