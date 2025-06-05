@@ -4,16 +4,17 @@
   "scripts": {
   "ng": "ng",
   "start": "npm run generate-locators && ng serve",
-  "generate-locators": "node C:/Users/Acer/OneDrive/Desktop/Self-healing/Self-heating-automation-project/generate-locators.js",
-  "watch:locators": "chokidar \"C:/Users/Acer/OneDrive/Desktop/Self-healing/self-heating-automation-ai/**/*.js\" -c \"npm run generate-locators\"",
-  "watch:locators:nodemon": "nodemon --watch C:/Users/Acer/OneDrive/Desktop/Self-healing/self-heating-automation-ai --ext js --exec \"npm run generate-locators\"",
+  "generate-locators": "node C:/Users/bikrams/Desktop/Self-healing/self-healing-project/generate-locators.js",
+  "watch:locators": "chokidar \"C:/Users/bikrams/Desktop/Self-healing/self-healing-automation-ai/**/*.js\" -c \"npm run generate-locators\"",
+  "watch:locators:nodemon": "nodemon --watch C:/Users/bikrams/Desktop/Self-healing/self-healing-automation-ai --ext js --exec \"npm run generate-locators\"",
   "build": "npm run generate-locators && ng build",
   "watch": "ng build --watch --configuration development",
   "test": "ng test",
   "serve": "concurrently \"npm run generate-locators\" \"ng serve\"",
   "dev": "concurrently \"npm run watch:locators:nodemon\" \"ng serve\"",
   "serve:ssr:self-heating-automation-project": "npm run generate-locators && node dist/self-heating-automation-project/server/server.mjs"
-  },
+},
+
   "private": true,
   "dependencies": {
     "@angular/animations": "^19.0.0",

@@ -1,1 +1,11 @@
-<h1> Welcome User!</h1>
+<div class="dashboard" id="dashboard">
+  <h1 id="dashboard-title">Dashboard</h1>
+  <button id="add-card-button" (click)="addCard()">Add Card</button>
+  <div class="cards" id="cards-container"> 
+    <div class="card" *ngFor="let card of cards; let i = index" [attr.id]="'card-' + i">
+      <h2 [attr.id]="'card-title-' + i">{{ card.title }}</h2>
+      <p [attr.id]="'card-content-' + i">{{ card.content }}</p>
+      <button [attr.id]="'delete-card-button-' + i" (click)="deleteCard(i)">Delete</button>
+    </div>
+  </div>
+</div>
