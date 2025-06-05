@@ -4,9 +4,9 @@
   "scripts": {
   "ng": "ng",
   "start": "npm run generate-locators && ng serve",
-  "generate-locators": "node C:/Users/bikrams/Desktop/Self-healing/self-healing-project/generate-locators.js",
-  "watch:locators": "chokidar \"C:/Users/bikrams/Desktop/Self-healing/self-healing-automation-ai/**/*.js\" -c \"npm run generate-locators\"",
-  "watch:locators:nodemon": "nodemon --watch C:/Users/bikrams/Desktop/Self-healing/self-healing-automation-ai --ext js --exec \"npm run generate-locators\"",
+  "generate-locators": "node C:/Users/bikramshrestha/Desktop/Self-healing/self-healing-project/generate-locators.js",
+  "watch:locators": "chokidar \"C:/Users/bikramshrestha/Desktop/Self-healing/self-healing-automation-ai/**/*.js\" -c \"npm run generate-locators\"",
+  "watch:locators:nodemon": "nodemon --watch C:/Users/bikramshrestha/Desktop/Self-healing/self-healing-automation-ai --ext js --exec \"npm run generate-locators\"",
   "build": "npm run generate-locators && ng build",
   "watch": "ng build --watch --configuration development",
   "test": "ng test",
